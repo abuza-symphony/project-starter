@@ -1,0 +1,9 @@
+---
+doublestar: true
+exclude:
+  - '**/templates/*.yaml'
+  - '**/templates/tests/*.yaml'
+formatter:
+  type: basic
+  indent: 2
+  include_document_start: true

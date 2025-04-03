@@ -1,0 +1,31 @@
+{
+  "hostRequirements": {
+    "cpus": 2,
+    "memory": "8gb",
+    "storage": "32gb"
+  },
+  "name": "abuza-symphony/codespace.abuza-symphony",
+  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vscode-remote.vscode-remote-extensionpack",
+        "ms-vscode.remote-repositories",
+        "ms-kubernetes-tools.vscode-kubernetes-tools",
+        "ms-azuretools.vscode-docker",
+        "ms-vscode.makefile-tools",
+        "github.codespaces",
+        "github.vscode-github-actions",
+        "amazonwebservices.aws-toolkit-vscode",
+        "eamodio.gitlens",
+        "4ops.terraform",
+        "tylerharris.terraform-link-docs",
+        "vscode-icons-team.vscode-icons",
+        "tamasfe.even-better-toml",
+        "hverlin.mise-vscode",
+        "editorconfig.editorconfig"
+      ]
+    }
+  },
+  "postCreateCommand": "bash .devcontainer/post-create-command.sh"
+}

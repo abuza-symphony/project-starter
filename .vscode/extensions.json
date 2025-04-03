@@ -1,0 +1,19 @@
+{
+  "recommendations": [
+    "ms-vscode-remote.vscode-remote-extensionpack",
+    "ms-vscode.remote-repositories",
+    "ms-kubernetes-tools.vscode-kubernetes-tools",
+    "ms-azuretools.vscode-docker",
+    "ms-vscode.makefile-tools",
+    "github.codespaces",
+    "github.vscode-github-actions",
+    "amazonwebservices.aws-toolkit-vscode",
+    "eamodio.gitlens",
+    "4ops.terraform",
+    "tylerharris.terraform-link-docs",
+    "vscode-icons-team.vscode-icons",
+    "tamasfe.even-better-toml",
+    "hverlin.mise-vscode",
+    "editorconfig.editorconfig"
+  ]
+}

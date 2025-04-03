@@ -1,0 +1,3 @@
+[env]
+_.path = ["{{config_root}}/bin"]
+MISE_ENV="ci"

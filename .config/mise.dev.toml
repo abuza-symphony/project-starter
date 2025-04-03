@@ -1,0 +1,48 @@
+[env]
+_.path = ["{{config_root}}/bin"]
+MISE_ENV="dev"
+AWS_CONFIG_FILE="{{config_root}}/.config/aws/config"
+
+[tasks.hygiene]
+description = "Code hygiene"
+run = ["pre-commit run --all-files"]
+
+[tasks.install]
+depends = ["install-pre-commit-hooks"]
+description = "Install dependencies"
+
+[tasks.install-pre-commit-hooks]
+description = "Install pre-commit hooks"
+run = [
+    "pre-commit install",
+    "pre-commit install --hook-type pre-commit",
+    "pre-commit install --hook-type commit-msg",
+]
+
+[tasks.update-pre-commit]
+description = "Update pre-commit hooks"
+run = ["pre-commit autoupdate"]
+
+[tools]
+"usage"= "2.0.7"
+"python" = "3.13"
+"pipx:punsctl" = "0.2.6"
+"pipx:pre-commit" = "4.2.0"
+"aqua:sigstore/cosign" = "2.4.3"
+"ubi:slsa-framework/slsa-verifier" = "2.7.0"
+"aqua:aquasecurity/trivy" = "0.61.0"
+"aqua:cli/cli" = "2.69.0"
+"aqua:aws/aws-cli" = "2.25.9"
+"aqua:FiloSottile/age" = "1.2.1"
+"ubi:getsops/sops" = "3.10.1"
+"aqua:hashicorp/vault" = "1.19.0"
+"ubi:koalaman/shellcheck" = "0.10.0"
+"aqua:derailed/k9s" = "0.40.10"
+"aqua:kubernetes/kubectl" = "1.32.3"
+"aqua:helm/helm" = "3.17.2"
+"aqua:norwoodj/helm-docs" = "1.14.2"
+"aqua:opentofu/opentofu" = "1.9.0"
+"aqua:gruntwork-io/terragrunt" = "0.77.6"
+"aqua:terraform-docs/terraform-docs" = "0.19.0"
+"ubi:terraform-linters/tflint" = "0.56.0"
+"ubi:argoproj/argo-cd" = "2.14.9"

@@ -1,0 +1,5 @@
+[settings]
+disable_backends = ["asdf"]
+
+[env]
+MISE_ENV="dev"
